@@ -44,7 +44,31 @@ def listcomparitor(loi1, loi2):
             else:
                 results.append(0)
     return results
+    def greeting(name):
+  print("Hello there, " + name)
 
+
+def romanToInteger(input_str):
+  size = len(input_str)
+  total = 0
+  for i in range(size):
+    if input_str[i] == "I":
+      total += 1
+    elif input_str[i] == "V":
+      total += 5
+    elif input_str[i] == "X":
+      total += 10
+    elif input_str[i] == "L":
+      total += 50
+    elif input_str[i] == "C":
+      total += 100
+    elif input_str[i] == "D":
+      total += 500
+    elif input_str[i] == "M":
+      total += 1000
+    else:
+      return 0
+  return total
 
 
 
